@@ -1,9 +1,9 @@
 {
-  "name": "gulp-wkhtmltopdf",
+  "name": "gulp-html2pdf",
   "version": "0.1.0",
   "description": "Export HTML files to PDF",
-  "homepage": "http://github.com/igorzoriy/gulp-wkhtmltopdf",
-  "repository": "git://github.com/igorzoriy/gulp-wkhtmltopdf.git",
+  "homepage": "http://github.com/igorzoriy/gulp-html2pdf",
+  "repository": "git://github.com/igorzoriy/gulp-html2pdf.git",
   "main": "./index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
