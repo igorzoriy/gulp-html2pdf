@@ -1,0 +1,26 @@
+{
+  "name": "gulp-wkhtmltopdf",
+  "version": "0.1.0",
+  "description": "Export HTML files to PDF",
+  "homepage": "http://github.com/igorzoriy/gulp-wkhtmltopdf",
+  "repository": "git://github.com/igorzoriy/gulp-wkhtmltopdf.git",
+  "main": "./index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "gulpplugin",
+    "wkhtmltopdf"
+  ],
+  "author": {
+    "name": "Igor Zoriy",
+    "email": "igor.zoriy@gmail.com",
+    "url": "igorzoriy.com"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "gulp-util": "^2.2.1",
+    "through2": "^0.5.1",
+    "wkhtmltopdf": "^0.1.5"
+  }
+}
