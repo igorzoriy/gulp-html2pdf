@@ -8,6 +8,7 @@ var PluginError = gutil.PluginError;
 
 var PLUGIN_NAME = 'gulp-wkhtmltopdf';
 
+var options = {};
 
 function transform(file, enc, cb) {
     if (file.isNull()) {
@@ -23,7 +24,7 @@ function transform(file, enc, cb) {
 
     file.path = gutil.replaceExtension(file.path, '.pdf');
 
-    var pdfStream = wkhtmltopdf(file.contents.toString(enc));
+    var pdfStream = wkhtmltopdf(file.contents.toString(enc), options);
     var outStream = through();
     pdfStream.on('error', this.emit.bind(this, 'error'));
     pdfStream.pipe(outStream);
@@ -33,6 +34,7 @@ function transform(file, enc, cb) {
     cb();
 }
 
-module.exports = function () {
+module.exports = function (opts) {
+    options = opts || {};
     return through.obj(transform);
 };
